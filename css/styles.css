@@ -13,6 +13,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 p {
@@ -30,7 +31,9 @@ header {
 /* Main */
 
 .col img {
-    margin-bottom: 24px;
+    /* Images are on the left side and text is on the right. The images take up 40% and the text 60% */
+    width: 40%;
+    margin-right: 16px;
 }
 
 .col {
@@ -39,6 +42,12 @@ header {
     border-radius: 4px;
     padding: 16px;
     margin-bottom: 24px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 @media only screen and (min-width: 975px) {
@@ -51,4 +60,15 @@ header {
     .col {
         width: calc(96% / 3);
     }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col img {
+        margin-bottom: 24px;
+        width: 100%;
+        display: block;
+    }
 }
+
