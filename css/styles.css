@@ -50,6 +50,7 @@ header {
     align-items: flex-start;
 }
 
+
 @media only screen and (min-width: 975px) {
     .flex-container {
         display: flex;
